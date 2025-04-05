@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">webdemo</div>
+        <ul class="nav">
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="form.html">[입력양식 페이지]</a></li>
+          <li>
+            <a href="audiovideo.html">[ 이미지,오디오, 비디오 사용 페이지] </a>
+          </li>
+          ]
+          <li><a href="semantic.html">[테이블 이용 페이지] </a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>공지사항</h1>
+    <!-- <h1>📄 Object & Embed 태그로 미디어 삽입</h1> -->
+
+    <!-- PDF 파일 -->
+    <h2>1. PDF 파일</h2>
+    <h3>선물 이미지</h3>
+    <!-- <h3>▶ object 사용</h3> -->
+    <object data="다운로드.pdf" type="application/pdf" width="700" height="920">
+      <p>PDF 파일을 보려면 <a href="다운로드.pdf">여기</a>를 클릭하세요.</p>
+      <embed
+        src="다운로드.pdf"
+        type="application/pdf"
+        width="700"
+        height="920"
+      />
+    </object>
+    <!-- <h3>▶ embed 사용</h3> -->
+    <!-- <embed src="다운로드.pdf" type="application/pdf" width="700" height="920" /> -->
+    <hr />
+
+    <!-- 오디오 파일 -->
+    <h2>2. 오디오 파일</h2>
+    <!-- <h3>▶ object 사용</h3> -->
+    <object data="relax.mp3" type="audio/mpeg" width="300" height="50">
+      <p>
+        브라우저가 오디오를 지원하지 않습니다.
+        <a href="relax.mp3">여기서 다운로드</a>
+      </p>
+      <embed src="relax.mp3" type="audio/mpeg" width="300" height="50" />
+    </object>
+    <!-- <h3>▶ embed 사용</h3> -->
+    <!-- <embed src="relax.mp3" type="audio/mpeg" width="300" height="50" /> -->
+    <hr />
+
+    <!-- 비디오 파일 -->
+    <h2>3. 비디오 파일</h2>
+    <!-- <h3>▶ object 사용</h3> -->
+    <object data="sea.mp4" type="video/mp4" width="900" height="600">
+      <p>비디오를 보려면 <a href="sea.mp4">여기</a>를 클릭하세요.</p>
+      <embed src="sea.mp4" type="video/mp4" width="900" height="600" />
+    </object>
+    <!-- <h3>▶ embed 사용</h3> -->
+    <!-- <embed src="sea.mp4" type="video/mp4" width="900" height="600" /> -->
+    <hr />
+
+    <!-- YouTube 영상 (iframe만 가능) -->
+    <h2>4. YouTube 홍보 영상</h2>
+    <iframe
+      width="900"
+      height="600"
+      src="https://www.youtube.com/embed/-gdkrL0FIk4"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <hr />
+
+    <!-- 링크 -->
+    <h2>5. 링크</h2>
+    <a href="semantic.html" target="_blank">semantic.html 열기</a>
+  </body>
+</html>
